@@ -93,4 +93,14 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    /**
+     * Hace que el sol baje, atardeciendo
+     */
+    public void atardecer()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(130);
+        }
+    }
 }
